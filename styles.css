@@ -62,7 +62,7 @@ button {
     justify-content: center;
     padding-bottom: 40px;
     padding-top: 40px;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .hero-main-text {
