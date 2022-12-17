@@ -9,6 +9,10 @@ ul {
     list-style: none;
 }
 
+li {
+    margin-right: 15px;
+}
+
 a {
     text-decoration: none;
     color: #E5E7EB;
@@ -18,12 +22,17 @@ a {
 button {
     background-color: #3882F6;
     color: white;
+    border: 1px solid #3882F6;
     border-radius: 4px;
+    padding: 6px 20px;
+    font-size: 16px;
 }
 
 .action-button {
+    padding: 4px 16px;
     border: 1px solid white;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 .header {
@@ -31,11 +40,14 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    margin-left: 20px;
 }
 
 .main {
@@ -48,12 +60,18 @@ button {
     background-color: #1F2937;
     display: flex;
     justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    flex-wrap: wrap;
 }
 
 .hero-main-text {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: bolder;
+    /*margin-left: 200px;*/
+    margin-right: 40px;
+    max-width: 400px;
 }
 
 .hero-secondary-text {
@@ -61,49 +79,99 @@ button {
     font-size: 18px;
 }
 
+.main-img {
+    margin: 20px 40px 20px 40px;  /*top,right, bottom, left */
+    background-color: rgb(77, 77, 77);
+    color:#E5E7EB;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .info-header {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    padding-bottom: 10px;
 }
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 150px;
     margin: 20px;
 }
 
 .card-image {
-    width: 200px;
-    height: 200px;
-    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+}
+
+.card > p {
+    text-align: center;
 }
 
 .quote {
     background-color: #E5E7EB;
-    font-size: 36px;
-    font-style: italic;
     color: #1F2937;
     text-align: center;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    text-align: left;
+    margin: 40px 220px 0;
+    min-width: 200px;
+}
+
+.quote-author {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0 240px 40px;
+    min-width: 60px;
 }
 
 .action {
     display: flex;
     justify-content: center;
     background-color: #3882F6;
-    margin: 40px;
+    margin: 40px 150px;
     border-radius: 8px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.action-content {
+    margin-right: 80px;
+}
+
+.action-header {
+    color: #E5E7EB;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.action-text {
+    color: #E5E7EB;
 }
 
 .footer {
